@@ -1,0 +1,2 @@
+import {Workspace} from '@/components/workspace';
+export default async function Page({params}:{params:Promise<{section?:string[]}>}){const p=await params;return <Workspace initialSection={p.section?.[0]??'today'}/>}
